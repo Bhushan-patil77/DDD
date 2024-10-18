@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "client": "cd client && npm install && npm run build",
-    "build": "npm run client",
-    "heroku-postbuild": "npm run build"
+    "build-client": "npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
